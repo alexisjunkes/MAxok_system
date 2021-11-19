@@ -31,13 +31,12 @@ body::-webkit-scrollbar{
     width: 12px; 
 }
 body::-webkit-scrollbar-track {
-    background: var(--cor_tema_maxok);        /* color of the tracking area */
+    background: var(--cor_de_fundo_padrao);        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: white;    /* color of the scroll thumb */
+    background-color: var(--cor_tema_maxok);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--cor_tema_maxok_massar_por_cima);  /* creates padding around scroll thumb */
 }
 
 
@@ -208,9 +207,10 @@ body::-webkit-scrollbar-thumb {
 }
 .titulo_de_artigo_dentro_do_HTML{
     font-family: var(--fonte_de_titulo_de_artigo);
-    font-weight: normal;
+    font-weight: bold;
    
     text-align: center;
+    padding: 10px;
 }
 
 .Paragrafo_de_artigo_dentro_do_HTML{
@@ -240,22 +240,6 @@ body::-webkit-scrollbar-thumb {
    
 }
 
-/*
-.artigo_primario .caixa_de_exibicao_de_html{
-    height: 400px;
-
-}
-
-
-
-.artigo_secundario .caixa_de_exibicao_de_html{
-    height: 300px;
-  
-}
-.artigo_terceario .caixa_de_exibicao_de_html{
-    height: 200px;
-}
-*/
 .caixa_de_exibicao_de_html{
     width: 100%;
   

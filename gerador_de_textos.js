@@ -29,7 +29,7 @@ var diretorio = ""
 var addd = document.querySelector('.quadro_de_artgos')
 for (let i = 0; i < 8; i++) {
 
-     var minimo_largura = 2
+    var minimo_largura = 2
     var maximo_largura = 7
     var minimo_altura = 2
     var maximo_altura = 5
@@ -37,14 +37,18 @@ for (let i = 0; i < 8; i++) {
     console.log("add")
     if(i == 0){
         newDiv.classList.add("artigo_primario")
-      
+        minimo_largura = 3
+        minimo_altura = 5
     }
     else if ((i >= 1) && (i < 4)) {
         newDiv.classList.add("artigo_secundario")
-        
+        minimo_largura = 3.5
+        minimo_altura = 3.5
     }
     else if (i >= 4){
         newDiv.classList.add("artigo_terceario")
+        minimo_largura = 2
+        minimo_altura = 2
     }
     var largura = (Math.floor(Math.random() * (maximo_largura - minimo_largura + 1)) + minimo_largura)*10
 
