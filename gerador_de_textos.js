@@ -29,10 +29,14 @@ var diretorio = ""
 var addd = document.querySelector('.quadro_de_artgos')
 for (let i = 0; i < 8; i++) {
 
+     var minimo_largura = 2
+    var maximo_largura = 7
+    
     const newDiv = document.createElement("div")
     console.log("add")
     if(i == 0){
         newDiv.classList.add("artigo_primario")
+      
     }
     else if ((i >= 1) && (i < 4)) {
         newDiv.classList.add("artigo_secundario")
@@ -40,11 +44,11 @@ for (let i = 0; i < 8; i++) {
     else if (i >= 4){
         newDiv.classList.add("artigo_terceario")
     }
-
-    
+    var largura = (Math.floor(Math.random() * (maximo_largura - minimo_largura + 1)) + minimo_largura)*10
+    newDiv.style.width = `${largura}%`
     newDiv.innerHTML = `                    
 <!---->
-<div class="moldura_do_artigo">
+<div class="moldura_do_artigo " id: ${largura}%;>
         <!--<h2 class="titulo_de_artigo">${i}Titulo artigo</h2>-->
         <div class="Filtro_de_capa_De_artigo">
         <iframe class="caixa_de_exibicao_de_html" src="Akai_niwa.html" scrolling="no"  frameborder="0" ></iframe>
