@@ -56,6 +56,17 @@ body::-webkit-scrollbar-thumb {
     min-width: var(--minimo_largura);
 }
 
+.Pagina_de_amostra{
+    
+    background-color: rgb(255, 255, 255);
+}
+.pagina_de_leitura{
+   
+    background-image: linear-gradient(180deg,  var(--cor_de_fundo_padrao), var(--cor_sombra));
+    box-shadow: 2px 2px 15px var(--cor_sombra);
+    min-width: var(--minimo_largura);
+}
+
 
 .Titulo_principal_da_pagina{
     font-family: var(--fonte_de_titulo_de_pagina);
@@ -204,6 +215,7 @@ body::-webkit-scrollbar-thumb {
     font-family: var(--fonte_corpo_do_artigo);
     font-weight: normal;
     text-indent: 1em;
+    text-align: justify;
 }
 .titulo_de_artigo_dentro_do_HTML{
     font-family: var(--fonte_de_titulo_de_artigo);
@@ -217,7 +229,7 @@ body::-webkit-scrollbar-thumb {
     font-family: var(--fonte_corpo_do_artigo);
     font-weight: normal;
     text-indent: 1em; 
-  
+    text-align: justify;
     color: rgba(0, 0, 0, 0.678);
 }
 .Paragrafo_de_artigo_dentro_do_HTML_apresentacao{
@@ -225,11 +237,8 @@ body::-webkit-scrollbar-thumb {
     font-weight: normal;
     text-indent: 1em; 
   
-    color: rgba(0, 0, 0, 0.678);
+    color: rgba(0, 0, 0, 0.83);
     
-    background: -webkit-linear-gradient(black 5%, transparent 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
