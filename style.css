@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --fonte_de_titulo_de_artigo:'Cormorant Garamond', serif;
+    --fonte_de_titulo_de_pagina: 'Newsreader', serif;
+    --fonte_corpo_do_artigo: 'Raleway', sans-serif;
+
+
+    --cor_tema_maxok:#610c0c;
+    --cor_tema_maxok_massar_por_cima:#6e1717;
+    --minimo_largura:200px;
+    --cor_de_fundo_padrao: #f5f5f5;
+    --cor_sombra: #0000001c;
+
+    --larguta_maxima_janela: 1200px
+}
+
+.Pagina_de_navegacao{
+    /**background-color: var(--cor_de_fundo_padrao);*/
+    background-image: linear-gradient(180deg,  var(--cor_de_fundo_padrao), var(--cor_sombra));
+    box-shadow: 2px 2px 15px var(--cor_sombra);
+    min-width: var(--minimo_largura);
+}
+
+
+.Titulo_principal_da_pagina{
+    font-family: var(--fonte_de_titulo_de_pagina);
+    text-align: center;
+    font-weight: normal;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.375);
+    
+    width: 95%;
+    
+    background-color: white;
+    margin: auto;
+    font-size: 3em;
+
+}
+
+
+
+.barra_principal:hover .menu_de_navegacao{
+    display: block;
+   
+}
+.Titulo_de_artigo{
+    font-family: var(--fonte_de_titulo_de_artigo);
+    font-weight: normal;
+}
+
+
+.menu_de_navegacao{
+
+    display: none;
+    margin: auto;
+    color: white;
+    text-align: center;
+    
+}
+.menu_de_navegacao a {
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: var(--cor_tema_maxok);
+    text-decoration: none;
+    margin: 5px 5px;
+ 
+    
+}
+.menu_de_navegacao div a:hover {
+    color: white;
+    background-color: var(--cor_tema_maxok_massar_por_cima);
+}
+
+
+
+
+
+#corpo_principal_tela_inicial{
+    background-color: white;
+    width: 90%;
+   
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: var(--larguta_maxima_janela);
+    min-width: var(--minimo_largura);
+    
+}
+
+.quadro_de_artgos{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -00%);
+   
+}
+
+
+
+
+.moldura_do_artigo{
+  
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+   
+   
+    box-shadow: 0px 0px 15px var(--cor_sombra);
+    
+}
+
+.artigo_primario{
+    width: 49%;
+    min-width: var(--minimo_largura);
+   
+    
+    display: inline-block;
+    margin: 10px  auto;
+    
+}
+
+.artigo_secundario{
+    width: 39%;
+    min-width:var(--minimo_largura);
+   
+    
+    display: inline-block;
+    margin: 10px  auto;
+}
+.artigo_terceario{
+    width: 29%;
+    min-width: var(--minimo_largura);
+    
+    
+    display: inline-block;
+    margin: 10px  auto;
+}
+
+
+
+.titulo_de_artigo{
+    font-family: var(--fonte_de_titulo_de_artigo);
+    font-weight: normal;
+    padding: 0px 0px 5px 0px;
+}
+.Paragrafo_de_artigo{
+    font-family: var(--fonte_corpo_do_artigo);
+    font-weight: normal;
+    text-indent: 1em;
+}
+.titulo_de_artigo_dentro_do_HTML{
+    font-family: var(--fonte_de_titulo_de_artigo);
+    font-weight: normal;
+    background-color: yellow;
+text-align: center;
+}
+
+.Paragrafo_de_artigo_dentro_do_HTML{
+    font-family: var(--fonte_corpo_do_artigo);
+    font-weight: normal;
+    text-indent: 1em; 
+    background-color: yellowgreen;
+}
+
+.caixa_de_exibicao_de_html{
+    background-color: white;
+}
+
+.Filtro_de_capa_De_artigo{
+  
+    
+    background: -webkit-linear-gradient(#000, #000,transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.caixa_de_exibicao_de_html{
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.div_saber_mais{
+    width: 40%;
+   text-align: right;
+   display: inline-block;
+}
+.saber_mais{
+    color: var(--cor_tema_maxok);
+    text-decoration: none;
+}  
+.div_saber_mais_livro{
+    width: 40%;
+   text-align: left;
+   display: inline-block;
+}
+
+
+.saber_mais_livro{
+    color:  var(--cor_tema_maxok);
+    text-decoration: none;
+}   
+
+
+
+
+
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.623);
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor_tema_maxok);
+}
