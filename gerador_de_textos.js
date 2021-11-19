@@ -31,7 +31,8 @@ for (let i = 0; i < 8; i++) {
 
      var minimo_largura = 2
     var maximo_largura = 7
-    
+    var minimo_altura = 2
+    var maximo_altura = 5
     const newDiv = document.createElement("div")
     console.log("add")
     if(i == 0){
@@ -40,15 +41,20 @@ for (let i = 0; i < 8; i++) {
     }
     else if ((i >= 1) && (i < 4)) {
         newDiv.classList.add("artigo_secundario")
+        
     }
     else if (i >= 4){
         newDiv.classList.add("artigo_terceario")
     }
     var largura = (Math.floor(Math.random() * (maximo_largura - minimo_largura + 1)) + minimo_largura)*10
+
+    var altura = (Math.floor(Math.random() * (maximo_altura - minimo_altura + 1)) + minimo_altura)*100
+
     newDiv.style.width = `${largura}%`
+    newDiv.style.height = `${altura}px`
     newDiv.innerHTML = `                    
 <!---->
-<div class="moldura_do_artigo " id: ${largura}%;>
+<div class="moldura_do_artigo";>
         <!--<h2 class="titulo_de_artigo">${i}Titulo artigo</h2>-->
         <div class="Filtro_de_capa_De_artigo">
         <iframe class="caixa_de_exibicao_de_html" src="Akai_niwa.html" scrolling="no"  frameborder="0" ></iframe>
