@@ -69,7 +69,7 @@ for (let i = 0; i < 8; i++) {
         </div>
         
         <div class="div_saber_mais">
-            <a class="saber_mais" href="#">Saber mais</a> 
+            <a class="saber_mais" href="#">Mais</a> 
         </div>
 
 </div>
