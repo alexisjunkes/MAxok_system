@@ -1,13 +1,16 @@
 import  {lista_de_livros}  from "./listas_de_conteudo.js"
 import  {lista_de_livros_para_diretorio}  from "./listas_de_conteudo.js"
 import  {lista_de_variaveis_de_dicionario}  from "./listas_de_conteudo.js"
+import  {lista_de_id_adicionadis_matriz}  from "./listas_de_conteudo.js"
+
+var lista_de_id_adicionadis = lista_de_id_adicionadis_matriz
 
 
 var addd = document.querySelector('.quadro_de_artgos')
 for (let i = 0; i < 10; i++) {
 
     var minimo_largura = 2
-    var maximo_largura = 6.9
+    var maximo_largura = 6.5
     var minimo_altura = 2
     var maximo_altura = 4.9
 
@@ -15,13 +18,15 @@ for (let i = 0; i < 10; i++) {
 
 
 
-    var id_sorteio_historia = Number.parseInt(Math.random() * (numero_de_historias - 0) + 0)
-    if( (Number.parseInt(Math.random() * (10 - 0) + 0)) % 5 ==1 ){
+    var id_sorteio_historia = lista_de_id_adicionadis[Number.parseInt(Math.random() * (Object.keys(lista_de_id_adicionadis).length - 0) + 0)]
+    console.log(id_sorteio_historia)
+    
+    /*if( (Number.parseInt(Math.random() * (10 - 0) + 0)) % 5 ==1 ){
         id_sorteio_historia= 4
     }
     else{
         id_sorteio_historia = 12
-    }
+    }*/
     var numero_de_capitulos = Object.keys(lista_de_variaveis_de_dicionario[id_sorteio_historia]).length
 
   
