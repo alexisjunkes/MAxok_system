@@ -21,7 +21,7 @@
     --cor_de_fundo_padrao: #f5f5f5;
     --cor_sombra: #0000001c;
 
-    --larguta_maxima_janela: 1000px;
+    --larguta_maxima_janela: 1200px;
     --sombra_padrao:  2px 2px 15px var(--cor_sombra);
 }
 
@@ -224,6 +224,7 @@ body::-webkit-scrollbar-thumb {
    
     text-align: center;
     padding: 10px;
+    font-size: 3em;
 }
 
 .Paragrafo_de_artigo_dentro_do_HTML{
@@ -231,24 +232,25 @@ body::-webkit-scrollbar-thumb {
     font-weight: normal;
     text-indent: 1em; 
     text-align: justify;
-    color: rgba(0, 0, 0, 0.678);
-    line-height: 2em;
+    color: rgb(0, 0, 0);
+    line-height: 3em;
+    font-size: 1.5em;
 }
 
-.titulo_de_artigo_dentro_do_HTML_apresentacao{
+.titulo_de_artigo_dentro_do_HTML_Amostra{
     font-family: var(--fonte_de_titulo_de_artigo);
     font-weight: bold;
-   
-    text-align: center;
-    padding: 10px;
+
+  
+    padding: 20px;
 }
-.Paragrafo_de_artigo_dentro_do_HTML_apresentacao{
+.Paragrafo_de_artigo_dentro_do_HTML_Amostra{
     font-family: var(--fonte_corpo_do_artigo);
     font-weight: normal;
-    text-indent: 2em; 
    
-    color: rgba(0, 0, 0, 0.83);
-   
+   text-align: left;
+    color: rgb(0, 0, 0);
+    text-indent: 1em; 
     font-size: 1em;
 }
 
@@ -314,7 +316,6 @@ footer a {
 
 
 
-
 .Mecu_avancar_voltar_voltar, .Mecu_avancar_voltar_lista, .menu_de_navegacao_de_capitulos{
     margin: auto;
     color: white;
@@ -336,4 +337,49 @@ footer a {
 .menu_de_navegacao_de_capitulos div a:hover {
     color: white;
     background-color: var(--cor_tema_maxok_massar_por_cima);
+}
+
+
+
+
+
+.titulos_dos_livros{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);   
+    width: 30%;
+     min-width: var(--minimo_largura);
+
+}
+.quadro_de_livros{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -00%);
+    
+    margin: 10px auto;
+
+}
+.moldura_titulos_livros{
+    margin: 10px auto;
+
+    box-shadow: var(--sombra_padrao);
+    border-radius: 5px;
+    
+}
+
+.linha_historia{
+   
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2em;
+   
+
+}
+.imagem_de_capa_lista_de_historias{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px ;
 }
