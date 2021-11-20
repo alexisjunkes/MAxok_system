@@ -28,6 +28,8 @@ for (let i = 0; i < numero_de_livro; i++) {
     newDiv.innerHTML = `                    
 <!---->
 <div id=${i} class="moldura_titulos_livros";>       
+        
+
         <div class='linha_historia' class="favorite styled" >
             
             <a class="saber_mais_livro" href="livros/livro_${i}.html" '>

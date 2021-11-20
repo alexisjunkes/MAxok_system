@@ -199,7 +199,7 @@ body::-webkit-scrollbar-thumb {
   
     border-radius: 5px;
     padding: 5px;
-   margin: auto;
+    margin: auto;
     width: 90%;
     height: 90%;
     box-shadow:  var(--sombra_padrao);
@@ -240,7 +240,7 @@ body::-webkit-scrollbar-thumb {
 .titulo_de_artigo_dentro_do_HTML_Amostra{
     font-family: var(--fonte_de_titulo_de_artigo);
     font-weight: bold;
-
+    color: var(--cor_tema_maxok_massar_por_cima);
   
     padding: 20px;
 }
@@ -249,7 +249,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: normal;
    
    text-align: left;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.692);
     text-indent: 1em; 
     font-size: 1em;
 }
@@ -259,14 +259,15 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
    
-
+   
    
 }
 
 .caixa_de_exibicao_de_html{
     width: 100%;
-  -ms-touch-select: none;
+ 
     height: 100%;
+    pointer-events: none;
 }
 
 
@@ -276,27 +277,12 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-.div_saber_mais{
-    width: 40%;
-   text-align: right;
-   display: inline-block;
-   padding: 5px;
-}
-.saber_mais{
-    color: var(--cor_tema_maxok);
-    text-decoration: none;
-}  
-.div_saber_mais_livro{
-    width: 40%;
-   text-align: left;
-   display: inline-block;
-}
 
 
 .saber_mais_livro{
     color:  var(--cor_tema_maxok);
     text-decoration: none;
+
 }   
 
 
@@ -312,6 +298,9 @@ footer a {
     text-decoration: none;
     color: var(--cor_tema_maxok_massar_por_cima);
 }
+
+
+
 
 
 
