@@ -48,12 +48,13 @@ body::-webkit-scrollbar-thumb {
 
 
 
-.BTN_topo{
+.BTN_topo img{
     position: fixed;
-    bottom: 5%;
-    right: 5%;
-    width: 50px;
-    height: 50px;
+    bottom: 20px;
+    left: 20px;
+    width: 5%;
+    max-width: 30px;
+   
 }
 
 
@@ -249,7 +250,7 @@ body::-webkit-scrollbar-thumb {
     
 }
 .numero_de_palavras_do_capitulo{
-    color: rgba(0, 0, 0, 0.692);
+    font-size: 0em;
 }
 
 .titulo_de_artigo_dentro_do_HTML_Amostra{
