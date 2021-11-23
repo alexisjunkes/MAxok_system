@@ -4,10 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Serif JP', serif;
+   
 }
 
 
@@ -24,16 +26,19 @@
     --cor_de_fundo_padrao: #f5f5f5;
     --cor_sombra: #0000001c;
 
-    --larguta_maxima_janela: 1000px;
+    --larguta_maxima_janela: 800px;
     --sombra_padrao:  2px 2px 15px var(--cor_sombra);
 
 }
 
 
-
+body, html{
+    height: 500%;
+  }
 
 body::-webkit-scrollbar{
     width: 8px; 
+    height: 8px;
 }
 body::-webkit-scrollbar-track {
     background: var(--cor_de_fundo_padrao);        /* color of the tracking area */
@@ -45,9 +50,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-
 .BTN_topo img{
     position: fixed;
     bottom: 20px;
@@ -56,9 +58,30 @@ body::-webkit-scrollbar-thumb {
     max-width: 30px;
    
 }
+.div_principal{
 
+    background-color: chartreuse;
+   
+    min-width: var(--minimo_largura);
+    
+}
+.barra_principal{
+  
+    
+    margin: 0px auto;
+    
 
+}
 
+.pagina_de_leitura{
+   
+    /*background-image: linear-gradient(180deg,  var(--cor_de_fundo_padrao), var(--cor_sombra));*/
+    box-shadow:  var(--sombra_padrao);
+    min-width: var(--minimo_largura);
+    width: 100%;
+    
+    background-color: rgb(100, 56, 100);
+}
 
 .Pagina_de_navegacao{
     /**background-color: var(--cor_de_fundo_padrao);*/
@@ -70,12 +93,6 @@ body::-webkit-scrollbar-thumb {
 .Pagina_de_amostra{
     
     background-color: rgb(255, 255, 255);
-}
-.pagina_de_leitura{
-   
-    background-image: linear-gradient(180deg,  var(--cor_de_fundo_padrao), var(--cor_sombra));
-    box-shadow:  var(--sombra_padrao);
-    min-width: var(--minimo_largura);
 }
 
 
@@ -151,10 +168,10 @@ body::-webkit-scrollbar-thumb {
 
 #corpo_principal_tela_inicial{
     background-color: white;
-    width: 90%;
+  
     
-    display: block;
-    margin: 15px auto;
+
+    margin: 0px auto;
     border-radius: 10px;
     padding: 10px;
     max-width: var(--larguta_maxima_janela);
@@ -163,14 +180,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .quadro_de_artgos{
-    position: relative;
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -00%);
-
+    width: 100%;
 }
 
 
@@ -239,10 +252,11 @@ body::-webkit-scrollbar-thumb {
 .Paragrafo_de_artigo_dentro_do_HTML{
     font-weight: normal;
     text-indent: 2em; 
-    text-align: justify;
+    text-align: left;
     color: rgb(0, 0, 0);
     line-height: 2em;
     font-size: 1.0em;
+    width: 100%;
 }
 
 .numero_de_palavras_do_livro{

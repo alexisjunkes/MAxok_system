@@ -7035,7 +7035,7 @@ var lista_de_livros_para_diretorio = {
 
 
 
-var lista_de_id_adicionadis_matriz = [0,1,2,3,4,5,6,7,8,9,11,12]
+var lista_de_id_adicionadis_matriz = [0,1,2,3,4,5,7,8,9,11,12]
 
 
 
