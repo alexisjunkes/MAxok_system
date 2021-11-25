@@ -216,7 +216,6 @@ body::-webkit-scrollbar-thumb {
     min-width: var(--minimo_largura);
    
     
-    display: inline-block;
     margin: 10px  auto;
     
 }
@@ -226,7 +225,6 @@ body::-webkit-scrollbar-thumb {
     min-width:var(--minimo_largura);
    
     
-    display: inline-block;
     margin: 10px  auto;
 }
 .artigo_terceario{
@@ -234,7 +232,6 @@ body::-webkit-scrollbar-thumb {
     min-width: var(--minimo_largura);
     
     
-    display: inline-block;
     margin: 10px  auto;
 }
 
@@ -243,9 +240,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
    
     margin: auto;
-   padding: 10px;
+    padding: 10px;
     
     box-shadow:  var(--sombra_padrao);
+    height: 100%;
     
 }
 .detalhes_do_livro{
